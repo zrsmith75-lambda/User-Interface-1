@@ -1,66 +1,94 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+body {
+  /* font-size: 62.5%; */
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+.container {
+  width: 1000px;
+  /* background: orange; */
+  margin: 0 auto;
 }
 
-/* Your code starts here! */
+header {
+  background: purple;
+}
+
+nav {
+  background: yellow;
+}
+
+.main {
+  background: pink;
+}
+
+#left {
+  background: pink;
+  display: inline-block;
+  width: 49%;
+  padding: 5% 15%;
+  text-align: center;
+  /* margin: 0 0 0px 0; */
+}
+
+#right {
+  /* background: white; */
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  margin-top: 50px;
+}
+#title {
+  font-size: 60px;
+}
+button {
+  width: 125px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+  background: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* font-size: 50px; */
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.body-top {
+  background: red;
+  border-top: 5px solid black;
+}
+
+.body-img {
+  /* width: 100%; */
+}
+
+.body-bot {
+  background: teal;
+  border-bottom: 5px solid black;
+}
+
+.body-top article {
+  width: 49%;
+  display: inline-block;
+}
+
+.body-bot article {
+  width: 32%;
+  display: inline-block;
+}
+
+footer {
+  background: lightgreen;
+}
